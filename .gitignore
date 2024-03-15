@@ -1,0 +1,34 @@
+# Rust 编译输出
+/target/
+
+# Cargo 的元数据目录
+/Cargo.lock
+/Cargo.toml.orig
+Cargo.toml~
+/target/
+/debug/
+/release/
+
+# Rust 格式化工具（如 rustfmt）的备份文件
+*.rs.bk
+
+# Rust 项目中的测试输出和日志
+/tests/**/*.log
+/tests/**/*.stderr
+
+# Rust 构建缓存
+/.cargo/
+
+# 若不希望提交本地依赖包缓存
+/.cargo/registry/*
+
+# 若使用 `rustup` 管理 Rust 工具链，忽略其全局缓存
+~/.cargo/git/*
+~/.cargo/registry/index/*
+
+# 若有工作区(workspace)，忽略各个成员crate的target目录
+**/target/
+
+# 可选：忽略IDE生成的项目配置文件
+.idea/
+.vscode/
